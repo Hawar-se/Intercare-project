@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* --FONTS-- */
+$font-roboto: 'Roboto', sans-serif;
+
+@mixin xs-Desktop {
+    @media screen and (min-width: 1024px) and (max-width: 1365px) {
+        @content;
+    }
+}
+@mixin small-desktop {
+    @media screen and (min-width: 1366px) and (max-width: 1599px) {
+        @content;
+    }
+}
+@mixin medium-desktop {
+    @media screen and (min-width: 1600px) and (max-width: 1919px) {
+        @content;
+    }
+}
+@mixin large-desktop {
+    @media screen and (min-width: 1920px) {
+        @content;
+    }
+}
